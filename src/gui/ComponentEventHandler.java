@@ -1,13 +1,12 @@
 package gui;
 
-import java.awt.*;
 import java.awt.event.ComponentAdapter;
 import java.awt.event.ComponentEvent;
 
 /**
  * Component event handler
  *
- * @aversion 1.0 2017-10-05
+ * @version 1.1 2017-10-08
  * @author Alex Venger
  */
 public class ComponentEventHandler extends ComponentAdapter {
@@ -17,11 +16,9 @@ public class ComponentEventHandler extends ComponentAdapter {
      */
     @Override
     public void componentResized(ComponentEvent e) {
-        FieldPanel fieldPanel = (FieldPanel) e.getComponent();
-        Rectangle newFieldShape = new Rectangle(fieldPanel.getX() + 3,
-                fieldPanel.getY() + 3,
-                fieldPanel.getWidth() - 6,
-                fieldPanel.getHeight() - 6);
-        fieldPanel.getField().setFieldShape(newFieldShape);
+        if(e.getComponent() instanceof FieldPanel) {
+            ((FieldPanel) e.getComponent()).resizeField();
+            e.getComponent().repaint();
+        }
     }
 }

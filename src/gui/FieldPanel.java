@@ -5,31 +5,29 @@ import engine.Field;
 
 import javax.swing.*;
 import java.awt.*;
-import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
 /**
  * Panel with balls and field
  *
- * @aversion 1.0 2017-10-05
+ * @version 1.1 2017-10-08
  * @author Alex Venger
  */
 public class FieldPanel extends JPanel {
     private static final int DEFAULT_WIDTH = 600;
     private static final int DEFAULT_HEIGHT = 400;
+    private static final int DEFAULT_MARGIN = 3;
 
-    private List<Ball> balls = new ArrayList<>();
-    private Field field = new Field(new Rectangle(3, 3, DEFAULT_WIDTH - 6, DEFAULT_HEIGHT - 6),
-            Color.LIGHT_GRAY, Color.BLUE);
+    /**
+     * List of the jumping balls
+     */
+    private List<Ball> balls;
 
-    public Field getField() {
-        return field;
-    }
-
-    @Override
-    public Dimension getPreferredSize () {
-        return new Dimension(DEFAULT_WIDTH, DEFAULT_HEIGHT);
-    }
+    /**
+     * Field in which the balls are jumping
+     */
+    private Field field;
 
     /**
      * Adds a new ball to the panel
@@ -40,9 +38,36 @@ public class FieldPanel extends JPanel {
     }
 
     public FieldPanel() {
+        balls = new LinkedList<>();
+        field = new Field(
+                DEFAULT_MARGIN,
+                DEFAULT_MARGIN,
+                DEFAULT_WIDTH - DEFAULT_MARGIN * 2,
+                DEFAULT_HEIGHT - DEFAULT_MARGIN * 2,
+                Color.BLACK);
+
         addComponentListener(new ComponentEventHandler());
         addMouseListener(new MouseEventHandler(this));
-        setSize(DEFAULT_WIDTH, DEFAULT_HEIGHT);
+    }
+
+    /**
+     * Calculates the next position of the ball, taking into account the rebound from the walls.
+     * Can change, both the position and direction of the movement (rebound), i.e. angle of the ball
+     * @param ball The ball for which you need to calculate a new position
+     * @return Copy of the ball in the new position
+     */
+    public Ball nextMove(Ball ball) {
+        return field.nextMove(ball);
+    }
+
+    public void resizeField() {
+        field.setSize(getWidth() - DEFAULT_MARGIN * 2,
+                getHeight() - DEFAULT_MARGIN * 2);
+    }
+
+    @Override
+    public Dimension getPreferredSize () {
+        return new Dimension(DEFAULT_WIDTH, DEFAULT_HEIGHT);
     }
 
     @Override

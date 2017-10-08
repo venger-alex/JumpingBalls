@@ -1,54 +1,80 @@
 package engine;
 
-import static java.lang.Math.*;
 import java.awt.*;
+import java.awt.geom.Rectangle2D;
 
 /**
  * The field within which jumps the balls
  *
- * @aversion 1.0 2017-10-05
+ * @version 1.1 2017-10-08
  * @author Alex Venger
  */
 public class Field {
     /**
      * The rectangle of the field within which the process is going
      */
-    private Rectangle fieldShape;
+    private Rectangle2D shape;
 
     /**
-     * Background and border colors
+     * Color of the walls
      */
-    private Color backgroundColor;
-    private Color foregroundColor;
+    private Color color;
 
-    public Rectangle getFieldShape() {
-        return fieldShape;
+    public Rectangle2D getShape() {
+        return (Rectangle2D) shape.clone();
     }
 
-    public Color getBackgroundColor() {
-        return backgroundColor;
+    public double getX() {
+        return shape.getX();
     }
 
-    public Color getForegroundColor() {
-        return foregroundColor;
+    public double getY() {
+        return shape.getY();
     }
 
-    public void setFieldShape(Rectangle fieldShape) {
-        this.fieldShape = fieldShape;
+    public double getMinX() {
+        return shape.getMinX();
     }
 
-    public void setBackgroundColor(Color backgroundColor) {
-        this.backgroundColor = backgroundColor;
+    public double getMaxX() {
+        return shape.getMaxX();
     }
 
-    public void setForegroundColor(Color foregroundColor) {
-        this.foregroundColor = foregroundColor;
+    public double getMinY() {
+        return shape.getMinY();
     }
 
-    public Field(Rectangle fieldShape, Color backgroundColor, Color foregroundColor) {
-        this.setFieldShape(fieldShape);
-        this.setBackgroundColor(backgroundColor);
-        this.setForegroundColor(foregroundColor);
+    public double getMaxY() {
+        return shape.getMaxY();
+    }
+
+    public Color getColor() {
+        return color;
+    }
+
+    public void setShape(Rectangle2D shape) {
+        this.shape = (Rectangle2D) shape.clone();
+    }
+
+    public void setFrame(double x, double y, double width, double height) {
+        shape.setFrame(x, y, width, height);
+    }
+
+    public void setSize(double width, double height) {
+        shape.setFrame(getX(), getY(), width, height);
+    }
+
+    public void setColor(Color color) {
+        this.color = color;
+    }
+
+    public Field(Rectangle2D shape, Color color) {
+        setShape(shape);
+        setColor(color);
+    }
+
+    public Field(double x, double y, double width, double height, Color color) {
+        this(new Rectangle2D.Double(x, y, width, height), color);
     }
 
     /**
@@ -58,23 +84,8 @@ public class Field {
      * @return Copy of the ball in the new position
      */
     public Ball nextMove(Ball ball) {
-        /*
-         * Clone the transferred ball to return the copy in a new position
-         */
-        Ball ballNextMove = (Ball) ball.clone();
-
-        /*
-         * Calculate the new coordinates without taking into account the walls and other obstacles
-         */
-        ballNextMove = ballNextMove.nextMove();
-
-        /*
-         * Check whether new coordinates fit into the field limits, if yes, then there is no rebound,
-         * simply continue to fly, return immediately the new state of the ball
-         */
-        if(this.getFieldShape().contains(ballNextMove.getBallRectangle())) {
-            return ballNextMove;
-        }
+        // Get copy of the ball with new coordinates without taking into account the walls and other obstacles
+        Ball ballNextMove = ball.nextMove();
 
         /*
          * If the new position of the ball does not fit into the field, it means that they have rested
@@ -88,74 +99,40 @@ public class Field {
          * of the ball state
          */
 
-        double ballAngle = ball.getBallAngle();
+        boolean isRebound = false;
 
-        /*
-         * Upper wall
-         */
-        if(ballNextMove.getBallRectangle().getY() < this.getFieldShape().getY()) {
-            /*
-             * TODO Perhaps getX should not be taken from ball (which was), but in itself, i.e. new, because the ball could move along X, but not go beyond the borders
-             */
-            ballNextMove.getBallRectangle().setLocation((int)ball.getBallRectangle().getX(), (int)this.getFieldShape().getY());
-
-            if(ballAngle > 180 && ballAngle < 270) {
-                ballNextMove.setBallAngle(ballAngle + 90);
-            } else if (ballAngle > 90 && ballAngle < 180) {
-                ballNextMove.setBallAngle(ballAngle - 90);
-            }
+        // Left wall
+        if(ballNextMove.getMinX() < getMinX()) {
+            isRebound = true;
+            ballNextMove.setX(getMinX());
+            ballNextMove.setAngle(360 - ballNextMove.getAngle());
         }
 
-        /*
-         * Bottom wall
-         */
-        if((ballNextMove.getBallRectangle().getY() + ballNextMove.getBallRectangle().getHeight()) > (this.getFieldShape().getY() + this.getFieldShape().getHeight())) {
-            /*
-             *  TODO Perhaps getX should not be taken from ball (which was), but in itself, i.e. new, because the ball could move along X, but not go beyond the borders
-             */
-            ballNextMove.getBallRectangle().setLocation((int)ball.getBallRectangle().getX(), (int)(this.getFieldShape().getY() + this.getFieldShape().getHeight() - ball.getBallRectangle().height));
-
-            if(ballAngle > 0 && ballAngle < 90) {
-                ballNextMove.setBallAngle(ballAngle + 90);
-            } else if (ballAngle > 270 && ballAngle < 360) {
-                ballNextMove.setBallAngle(ballAngle - 90);
-            }
+        // Right wall
+        if(ballNextMove.getMaxX() > getMaxX()) {
+            isRebound = true;
+            ballNextMove.setX(getMaxX() - ballNextMove.getWidth());
+            ballNextMove.setAngle(360 - ballNextMove.getAngle());
         }
 
-        /*
-         * Left wall
-         */
-        if(ballNextMove.getBallRectangle().getX() <= this.getFieldShape().getX()) {
-            /*
-             * TODO Perhaps getY should not be taken from ball (which was), but in itself, i.e. new, because the ball could also move along Y, but not go beyond the boundaries
-             */
-            ballNextMove.getBallRectangle().setLocation((int)this.fieldShape.getX(), (int)(ball.getBallRectangle().getY()));
-
-            if(ballAngle >= 180 && ballAngle <= 270) {
-                ballNextMove.setBallAngle(ballAngle - 90);
-            } else if (ballAngle >= 270 && ballAngle <= 360) {
-                ballNextMove.setBallAngle(ballAngle - 270);
-            }
+        // Upper wall
+        if(ballNextMove.getMinY() < getMinY()) {
+            isRebound = true;
+            ballNextMove.setY(getMinY());
+            ballNextMove.setAngle(180 - ballNextMove.getAngle());
         }
 
-        /*
-         * Right wall
-         */
-        if(ballNextMove.getBallRectangle().getX() + ballNextMove.getBallRectangle().getWidth() > this.getFieldShape().getX() + this.getFieldShape().getWidth()) {
-            /*
-             * TODO Perhaps getY should not be taken from ball (which was), but in itself, i.e. new, because the ball could also move along Y, but not go beyond the boundaries
-             */
-            ballNextMove.getBallRectangle().setLocation((int)(this.getFieldShape().getX() + this.getFieldShape().getWidth() - ballNextMove.getBallRectangle().getWidth()),
-                    (int)ball.getBallRectangle().getY());
-
-            if(ballAngle >= 0 && ballAngle <= 90) {
-                ballNextMove.setBallAngle(ballAngle + 270);
-            } else if (ballAngle >= 90 && ballAngle <= 180) {
-                ballNextMove.setBallAngle(ballAngle + 90);
-            }
+        // Bottom wall
+        if(ballNextMove.getMaxY() > getMaxY()) {
+            isRebound = true;
+            ballNextMove.setY(getMaxY() - ballNextMove.getHeight());
+            ballNextMove.setAngle(180 - ballNextMove.getAngle());
         }
 
-        ballNextMove = ballNextMove.nextMove();
+        if(isRebound) {
+            ballNextMove = ballNextMove.nextMove();
+        }
+
         return ballNextMove;
     }
 
@@ -164,10 +141,8 @@ public class Field {
      * @param g Graphic context for drawing
      */
     public void paint(Graphics g) {
-        g.setColor(this.getForegroundColor());
-        g.drawRect((int)round(this.getFieldShape().getX()),
-                (int)round(this.getFieldShape().getY()),
-                (int)round(this.getFieldShape().getWidth()),
-                (int)round(this.getFieldShape().getHeight()));
+        Graphics2D g2 = (Graphics2D) g;
+        g2.setColor(getColor());
+        g2.draw(getShape());
     }
 }

@@ -10,7 +10,7 @@ import java.util.concurrent.ThreadLocalRandom;
 /**
  * Mouse event handler
  *
- * @aversion 1.0 2017-10-05
+ * @version 1.1 2017-10-08
  * @author Alex Venger
  */
 public class MouseEventHandler extends MouseAdapter {
@@ -18,10 +18,6 @@ public class MouseEventHandler extends MouseAdapter {
      * Panel with field and balls
      */
     private FieldPanel fieldPanel;
-
-    public FieldPanel getFieldPanel() {
-        return fieldPanel;
-    }
 
     public MouseEventHandler(FieldPanel fieldPanel) {
         this.fieldPanel = fieldPanel;
@@ -35,23 +31,19 @@ public class MouseEventHandler extends MouseAdapter {
      */
     @Override
     public void mouseClicked(MouseEvent e) {
-        int diameter = ThreadLocalRandom.current().nextInt(10, 30 + 1);
+        int radius = ThreadLocalRandom.current().nextInt(5, 15 + 1);
+
         Color color = new Color(ThreadLocalRandom.current().nextInt(0, 255 + 1),
                 ThreadLocalRandom.current().nextInt(0, 255 + 1),
                 ThreadLocalRandom.current().nextInt(0, 255 + 1));
-        int delay = ThreadLocalRandom.current().nextInt(3, 20 + 1);
 
-        int direction = ThreadLocalRandom.current().nextInt(0, 3 + 1) * 90;
-        int angle = ThreadLocalRandom.current().nextInt(30, 60 + 1) + direction;
+        int angle = ThreadLocalRandom.current().nextInt(0, 360 + 1);
 
-        Ball ball = new Ball(
-                new Rectangle(e.getX() - diameter / 2, e.getY() - diameter / 2, diameter, diameter),
-                color,
-                delay,
-                angle,
-                1);
+        int delay = ThreadLocalRandom.current().nextInt(3, 30 + 1);
 
-        this.getFieldPanel().add(ball);
+        Ball ball = new Ball(e.getX(), e.getY(), radius, color, angle, 1, delay);
+
+        fieldPanel.add(ball);
 
         /*
          * Start new thread that recalculates the position of the ball and calls the panel to be repaint,
@@ -60,13 +52,12 @@ public class MouseEventHandler extends MouseAdapter {
         Runnable ballAnimator = () -> {
             try {
                 for (; !Thread.currentThread().isInterrupted(); ) {
-                    Ball nextMove = this.getFieldPanel().getField().nextMove(ball);
-                    ball.setBallRectangle(nextMove.getBallRectangle());
-                    ball.setBallAngle(nextMove.getBallAngle());
+                    Ball nextMove = fieldPanel.nextMove(ball);
+                    ball.setBall(nextMove);
 
-                    this.getFieldPanel().repaint();
+                    fieldPanel.repaint();
 
-                    Thread.sleep(ball.getBallDelayMovementMilliseconds());
+                    Thread.sleep(ball.getDelay());
                 }
             } catch (InterruptedException err) {
                 return;
