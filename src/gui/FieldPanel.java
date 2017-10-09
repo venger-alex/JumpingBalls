@@ -11,13 +11,15 @@ import java.util.List;
 /**
  * Panel with balls and field
  *
- * @version 1.1 2017-10-08
+ * @version 1.2 2017-10-09
  * @author Alex Venger
  */
 public class FieldPanel extends JPanel {
     private static final int DEFAULT_WIDTH = 600;
     private static final int DEFAULT_HEIGHT = 400;
-    private static final int DEFAULT_MARGIN = 3;
+    private static final int DEFAULT_BORDER = 4;
+    private static final int DEFAULT_MARGIN = 0;
+    private static final Color DEFAULT_FIELD_COLOR = Color.GRAY;
 
     /**
      * List of the jumping balls
@@ -38,13 +40,16 @@ public class FieldPanel extends JPanel {
     }
 
     public FieldPanel() {
+        setBorder(BorderFactory.createLineBorder(getBackground(), DEFAULT_BORDER));
+        Insets insets = getInsets();
+
         balls = new LinkedList<>();
         field = new Field(
-                DEFAULT_MARGIN,
-                DEFAULT_MARGIN,
-                DEFAULT_WIDTH - DEFAULT_MARGIN * 2,
-                DEFAULT_HEIGHT - DEFAULT_MARGIN * 2,
-                Color.BLACK);
+                DEFAULT_MARGIN + insets.left,
+                DEFAULT_MARGIN + insets.top,
+                DEFAULT_WIDTH - DEFAULT_MARGIN * 2 - insets.right - insets.left - 1,
+                DEFAULT_HEIGHT - DEFAULT_MARGIN * 2 - insets.bottom - insets.top - 1,
+                DEFAULT_FIELD_COLOR);
 
         addComponentListener(new ComponentEventHandler());
         addMouseListener(new MouseEventHandler(this));
@@ -61,8 +66,9 @@ public class FieldPanel extends JPanel {
     }
 
     public void resizeField() {
-        field.setSize(getWidth() - DEFAULT_MARGIN * 2,
-                getHeight() - DEFAULT_MARGIN * 2);
+        Insets insets = getInsets();
+        field.setSize(getWidth() - DEFAULT_MARGIN * 2 - insets.right - insets.left - 1,
+                getHeight() - DEFAULT_MARGIN * 2 - insets.bottom - insets.top - 1);
     }
 
     @Override
@@ -71,8 +77,8 @@ public class FieldPanel extends JPanel {
     }
 
     @Override
-    public void paint(Graphics g) {
-        super.paint(g);
+    protected void paintComponent(Graphics g) {
+        super.paintComponent(g);
         field.paint(g);
         for (Ball ball : balls) {
             ball.paint(g);
