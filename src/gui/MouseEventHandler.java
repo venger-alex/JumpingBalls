@@ -1,6 +1,7 @@
 package gui;
 
 import engine.Ball;
+import engine.concurrent.BallAnimator;
 
 import java.awt.*;
 import java.awt.event.MouseAdapter;
@@ -10,7 +11,7 @@ import java.util.concurrent.ThreadLocalRandom;
 /**
  * Mouse event handler
  *
- * @version 1.1 2017-10-08
+ * @version 1.2 2017-10-12
  * @author Alex Venger
  */
 public class MouseEventHandler extends MouseAdapter {
@@ -31,6 +32,9 @@ public class MouseEventHandler extends MouseAdapter {
      */
     @Override
     public void mouseClicked(MouseEvent e) {
+
+        if(BallAnimator.isPaused()) return;
+
         int radius = ThreadLocalRandom.current().nextInt(5, 15 + 1);
 
         Color color = new Color(ThreadLocalRandom.current().nextInt(0, 255 + 1),
@@ -43,27 +47,12 @@ public class MouseEventHandler extends MouseAdapter {
 
         Ball ball = new Ball(e.getX(), e.getY(), radius, color, angle, 1, delay);
 
-        fieldPanel.add(ball);
-
         /*
          * Start new thread that recalculates the position of the ball and calls the panel to be repaint,
          * for each ball - new thread
          */
-        Runnable ballAnimator = () -> {
-            try {
-                for (; !Thread.currentThread().isInterrupted(); ) {
-                    Ball nextMove = fieldPanel.nextMove(ball);
-                    ball.setBall(nextMove);
+        Thread ballAnimator = new BallAnimator(ball);
+        fieldPanel.addBall(ballAnimator);
 
-                    fieldPanel.repaint();
-
-                    Thread.sleep(ball.getDelay());
-                }
-            } catch (InterruptedException err) {
-                return;
-            }
-        };
-        Thread thread = new Thread(ballAnimator);
-        thread.start();
     }
 }

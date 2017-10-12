@@ -2,9 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="60bbe51e-93c4-4ee1-8b3a-c24c4bb1429f" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/engine/concurrent/BallAnimator.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/JumpingBalls/gui/FieldPanel.class" afterPath="$PROJECT_DIR$/out/production/JumpingBalls/gui/FieldPanel.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/JumpingBalls/gui/MainFrame.class" afterPath="$PROJECT_DIR$/out/production/JumpingBalls/gui/MainFrame.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/JumpingBalls/gui/MouseEventHandler.class" afterPath="$PROJECT_DIR$/out/production/JumpingBalls/gui/MouseEventHandler.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/JumpingBalls/gui/Starter.class" afterPath="$PROJECT_DIR$/out/production/JumpingBalls/gui/Starter.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/gui/FieldPanel.java" afterPath="$PROJECT_DIR$/src/gui/FieldPanel.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/gui/MainFrame.java" afterPath="$PROJECT_DIR$/src/gui/MainFrame.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/gui/MouseEventHandler.java" afterPath="$PROJECT_DIR$/src/gui/MouseEventHandler.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/gui/Starter.java" afterPath="$PROJECT_DIR$/src/gui/Starter.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -16,68 +22,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Starter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/gui/Starter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="26" lean-forward="true" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FieldPanel.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/gui/FieldPanel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1867#1868#0" expanded="true" />
-                <element signature="e#1910#1911#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MouseEventHandler.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/gui/MouseEventHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="11" column="2" lean-forward="true" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="2" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MainFrame.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/gui/MainFrame.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Field.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/engine/Field.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-133">
-              <caret line="118" column="24" lean-forward="false" selection-start-line="118" selection-start-column="24" selection-end-line="118" selection-end-column="24" />
-              <folding>
-                <element signature="method#Field#0;class#Field#0" expanded="false" />
-                <element signature="method#Field#1;class#Field#0" expanded="false" />
-                <element signature="docComment;method#nextMove#0;class#Field#0" expanded="false" />
-                <element signature="docComment;method#paint#0;class#Field#0" expanded="false" />
-                <element signature="method#paint#0;class#Field#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -89,6 +34,8 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>see</find>
+      <find>synchronized</find>
+      <find>syn</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -104,13 +51,17 @@
       <list>
         <option value="$PROJECT_DIR$/src/gui/WindowEventHandler.java" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/src/gui/MouseEventHandler.java" />
         <option value="$PROJECT_DIR$/src/gui/ComponentEventHandler.java" />
         <option value="$PROJECT_DIR$/src/engine/Field.java" />
         <option value="$PROJECT_DIR$/src/engine/Ball.java" />
-        <option value="$PROJECT_DIR$/src/gui/Starter.java" />
-        <option value="$PROJECT_DIR$/src/gui/MainFrame.java" />
+        <option value="$PROJECT_DIR$/src/gui/BallThread.java" />
+        <option value="$PROJECT_DIR$/src/gui/BallAnimator.java" />
         <option value="$PROJECT_DIR$/src/gui/FieldPanel.java" />
+        <option value="$PROJECT_DIR$/src/gui/Starter.java" />
+        <option value="$PROJECT_DIR$/src/gui/MouseEventHandler.java" />
+        <option value="$PROJECT_DIR$/src/gui/MenuEventHandler.java" />
+        <option value="$PROJECT_DIR$/src/gui/MainFrame.java" />
+        <option value="$PROJECT_DIR$/src/engine/concurrent/BallAnimator.java" />
       </list>
     </option>
   </component>
@@ -136,6 +87,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -158,17 +113,64 @@
               <item name="JumpingBalls" type="b2602c69:ProjectViewProjectNode" />
               <item name="JumpingBalls" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="engine" type="462c0819:PsiDirectoryNode" />
+              <item name="concurrent" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JumpingBalls" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JumpingBalls" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="gui" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JumpingBalls" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="JumpingBalls" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="JumpingBalls" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JumpingBalls" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JumpingBalls" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JumpingBalls" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+              <item name="concurrent" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="AndroidView" />
-      <pane id="Scratches" />
     </panes>
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="engine.concurrent" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -186,7 +188,7 @@
     <configuration name="Starter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="gui.*" />
+          <option name="PATTERN" value="engine.concurrent.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -312,7 +314,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -321,13 +322,15 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" x="92" y="92" width="1182" height="544" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2647504" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2685325" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -339,7 +342,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -401,74 +403,17 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="10" />
+      <option name="time" value="13" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/gui/Starter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/engine/Ball.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="method#setBall#0;class#Ball#0" expanded="false" />
-            <element signature="method#Ball#0;class#Ball#0" expanded="false" />
-            <element signature="method#Ball#1;class#Ball#0" expanded="false" />
-            <element signature="docComment;method#nextMove#0;class#Ball#0" expanded="false" />
-            <element signature="method#nextMove#0;class#Ball#0" expanded="false" />
-            <element signature="docComment;method#paint#0;class#Ball#0" expanded="false" />
-            <element signature="docComment;method#clone#0;class#Ball#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/engine/Field.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1938">
-          <caret line="135" column="10" lean-forward="false" selection-start-line="135" selection-start-column="10" selection-end-line="135" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="method#Field#0;class#Field#0" expanded="false" />
-            <element signature="method#Field#1;class#Field#0" expanded="false" />
-            <element signature="docComment;method#nextMove#0;class#Field#0" expanded="false" />
-            <element signature="docComment;method#paint#0;class#Field#0" expanded="false" />
-            <element signature="method#paint#0;class#Field#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/awt/geom/RectangularShape.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="100" column="18" lean-forward="false" selection-start-line="100" selection-start-column="18" selection-end-line="100" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/gui/FieldPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="22" column="28" lean-forward="false" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/gui/MouseEventHandler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="680">
           <caret line="50" column="37" lean-forward="false" selection-start-line="50" selection-start-column="37" selection-end-line="50" selection-end-column="37" />
           <folding>
-            <element signature="imports" expanded="false" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -495,7 +440,6 @@
         <state relative-caret-position="2516">
           <caret line="173" column="0" lean-forward="false" selection-start-line="173" selection-start-column="0" selection-end-line="173" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="false" />
             <element signature="method#Field#0;class#Field#0" expanded="false" />
             <element signature="method#Field#1;class#Field#0" expanded="false" />
             <element signature="docComment;method#nextMove#0;class#Field#0" expanded="false" />
@@ -510,7 +454,7 @@
         <state relative-caret-position="425">
           <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="false" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -521,6 +465,8 @@
           <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#732#733#0" expanded="true" />
+            <element signature="e#763#764#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -529,7 +475,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -538,7 +486,7 @@
         <state relative-caret-position="1173">
           <caret line="78" column="0" lean-forward="false" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="false" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -574,7 +522,6 @@
         <state relative-caret-position="2941">
           <caret line="173" column="0" lean-forward="false" selection-start-line="173" selection-start-column="0" selection-end-line="173" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="false" />
             <element signature="method#Field#0;class#Field#0" expanded="false" />
             <element signature="method#Field#1;class#Field#0" expanded="false" />
             <element signature="docComment;method#nextMove#0;class#Field#0" expanded="false" />
@@ -589,7 +536,7 @@
         <state relative-caret-position="425">
           <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="false" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -600,6 +547,8 @@
           <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#732#733#0" expanded="true" />
+            <element signature="e#763#764#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -608,7 +557,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -617,7 +568,7 @@
         <state relative-caret-position="1173">
           <caret line="78" column="0" lean-forward="false" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="false" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -684,169 +635,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/awt/Graphics.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="605" column="25" lean-forward="false" selection-start-line="605" selection-start-column="25" selection-end-line="605" selection-end-column="25" />
-          <folding>
-            <element signature="docComment;class#Graphics#0" expanded="false" />
-            <element signature="docComment;method#Graphics#0;class#Graphics#0" expanded="false" />
-            <element signature="method#Graphics#0;class#Graphics#0" expanded="false" />
-            <element signature="docComment;method#create#0;class#Graphics#0" expanded="false" />
-            <element signature="docComment;method#create#1;class#Graphics#0" expanded="false" />
-            <element signature="method#create#1;class#Graphics#0" expanded="false" />
-            <element signature="docComment;method#translate#0;class#Graphics#0" expanded="false" />
-            <element signature="docComment;method#getColor#0;class#Graphics#0" expanded="false" />
-            <element signature="docComment;method#setColor#0;class#Graphics#0" expanded="false" />
-            <element signature="docComment;method#setPaintMode#0;class#Graphics#0" expanded="false" />
-            <element signature="docComment;method#setXORMode#0;class#Graphics#0" expanded="false" />
-            <element signature="docComment;method#getFont#0;class#Graphics#0" expanded="false" />
-            <element signature="docComment;method#setFont#0;class#Graphics#0" expanded="false" />
-            <element signature="docComment;method#getFontMetrics#0;class#Graphics#0" expanded="false" />
-            <element signature="docComment;method#getFontMetrics#1;class#Graphics#0" expanded="false" />
-            <element signature="docComment;method#getClipBounds#0;class#Graphics#0" expanded="false" />
-            <element signature="docComment;method#clipRect#0;class#Graphics#0" expanded="false" />
-            <element signature="docComment;method#setClip#0;class#Graphics#0" expanded="false" />
-            <element signature="docComment;method#getClip#0;class#Graphics#0" expanded="false" />
-            <element signature="docComment;method#setClip#1;class#Graphics#0" expanded="false" />
-            <element signature="docComment;method#copyArea#0;class#Graphics#0" expanded="false" />
-            <element signature="docComment;method#drawLine#0;class#Graphics#0" expanded="false" />
-            <element signature="docComment;method#fillRect#0;class#Graphics#0" expanded="false" />
-            <element signature="docComment;method#drawRect#0;class#Graphics#0" expanded="false" />
-            <element signature="method#drawRect#0;class#Graphics#0" expanded="false" />
-            <element signature="docComment;method#clearRect#0;class#Graphics#0" expanded="false" />
-            <element signature="docComment;method#drawRoundRect#0;class#Graphics#0" expanded="false" />
-            <element signature="docComment;method#fillRoundRect#0;class#Graphics#0" expanded="false" />
-            <element signature="docComment;method#draw3DRect#0;class#Graphics#0" expanded="false" />
-            <element signature="method#draw3DRect#0;class#Graphics#0" expanded="false" />
-            <element signature="docComment;method#fill3DRect#0;class#Graphics#0" expanded="false" />
-            <element signature="method#fill3DRect#0;class#Graphics#0" expanded="false" />
-            <element signature="docComment;method#drawOval#0;class#Graphics#0" expanded="false" />
-            <element signature="docComment;method#fillOval#0;class#Graphics#0" expanded="false" />
-            <element signature="docComment;method#drawArc#0;class#Graphics#0" expanded="false" />
-            <element signature="docComment;method#fillArc#0;class#Graphics#0" expanded="false" />
-            <element signature="docComment;method#drawPolyline#0;class#Graphics#0" expanded="false" />
-            <element signature="docComment;method#drawPolygon#0;class#Graphics#0" expanded="false" />
-            <element signature="docComment;method#drawPolygon#1;class#Graphics#0" expanded="false" />
-            <element signature="docComment;method#fillPolygon#0;class#Graphics#0" expanded="false" />
-            <element signature="docComment;method#fillPolygon#1;class#Graphics#0" expanded="false" />
-            <element signature="docComment;method#drawString#0;class#Graphics#0" expanded="false" />
-            <element signature="docComment;method#drawString#1;class#Graphics#0" expanded="false" />
-            <element signature="docComment;method#drawChars#0;class#Graphics#0" expanded="false" />
-            <element signature="method#drawChars#0;class#Graphics#0" expanded="false" />
-            <element signature="docComment;method#drawBytes#0;class#Graphics#0" expanded="false" />
-            <element signature="method#drawBytes#0;class#Graphics#0" expanded="false" />
-            <element signature="docComment;method#drawImage#0;class#Graphics#0" expanded="false" />
-            <element signature="docComment;method#drawImage#1;class#Graphics#0" expanded="false" />
-            <element signature="docComment;method#drawImage#2;class#Graphics#0" expanded="false" />
-            <element signature="docComment;method#drawImage#3;class#Graphics#0" expanded="false" />
-            <element signature="docComment;method#drawImage#4;class#Graphics#0" expanded="false" />
-            <element signature="docComment;method#drawImage#5;class#Graphics#0" expanded="false" />
-            <element signature="docComment;method#dispose#0;class#Graphics#0" expanded="false" />
-            <element signature="docComment;method#finalize#0;class#Graphics#0" expanded="false" />
-            <element signature="docComment;method#toString#0;class#Graphics#0" expanded="false" />
-            <element signature="docComment;method#getClipRect#0;class#Graphics#0" expanded="false" />
-            <element signature="docComment;method#hitClip#0;class#Graphics#0" expanded="false" />
-            <element signature="method#hitClip#0;class#Graphics#0" expanded="false" />
-            <element signature="e#57893#57944#0" expanded="false" />
-            <element signature="docComment;method#getClipBounds#1;class#Graphics#0" expanded="false" />
-            <element signature="method#getClipBounds#1;class#Graphics#0" expanded="false" />
-            <element signature="e#59205#59256#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/awt/Rectangle.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="67">
           <caret line="121" column="0" lean-forward="true" selection-start-line="121" selection-start-column="0" selection-end-line="159" selection-end-column="22" />
-          <folding>
-            <element signature="docComment;class#Rectangle#0" expanded="false" />
-            <element signature="docComment;field#x#0;class#Rectangle#0" expanded="false" />
-            <element signature="docComment;field#y#0;class#Rectangle#0" expanded="false" />
-            <element signature="docComment;field#width#0;class#Rectangle#0" expanded="false" />
-            <element signature="docComment;field#height#0;class#Rectangle#0" expanded="false" />
-            <element signature="docComment;method#initIDs#0;class#Rectangle#0" expanded="false" />
-            <element signature="initializer##0;class#Rectangle#0" expanded="false" />
-            <element signature="docComment;method#Rectangle#0;class#Rectangle#0" expanded="false" />
-            <element signature="docComment;method#Rectangle#1;class#Rectangle#0" expanded="false" />
-            <element signature="docComment;method#Rectangle#2;class#Rectangle#0" expanded="false" />
-            <element signature="method#Rectangle#2;class#Rectangle#0" expanded="false" />
-            <element signature="docComment;method#Rectangle#3;class#Rectangle#0" expanded="false" />
-            <element signature="docComment;method#Rectangle#4;class#Rectangle#0" expanded="false" />
-            <element signature="docComment;method#Rectangle#5;class#Rectangle#0" expanded="false" />
-            <element signature="docComment;method#Rectangle#6;class#Rectangle#0" expanded="false" />
-            <element signature="docComment;method#getX#0;class#Rectangle#0" expanded="false" />
-            <element signature="docComment;method#getY#0;class#Rectangle#0" expanded="false" />
-            <element signature="docComment;method#getWidth#0;class#Rectangle#0" expanded="false" />
-            <element signature="docComment;method#getHeight#0;class#Rectangle#0" expanded="false" />
-            <element signature="docComment;method#getBounds#0;class#Rectangle#0" expanded="false" />
-            <element signature="docComment;method#getBounds2D#0;class#Rectangle#0" expanded="false" />
-            <element signature="docComment;method#setBounds#0;class#Rectangle#0" expanded="false" />
-            <element signature="docComment;method#setBounds#1;class#Rectangle#0" expanded="false" />
-            <element signature="docComment;method#setRect#0;class#Rectangle#0" expanded="false" />
-            <element signature="method#setRect#0;class#Rectangle#0" expanded="false" />
-            <element signature="method#clip#0;class#Rectangle#0" expanded="false" />
-            <element signature="docComment;method#reshape#0;class#Rectangle#0" expanded="false" />
-            <element signature="method#reshape#0;class#Rectangle#0" expanded="false" />
-            <element signature="docComment;method#getLocation#0;class#Rectangle#0" expanded="false" />
-            <element signature="docComment;method#setLocation#0;class#Rectangle#0" expanded="false" />
-            <element signature="docComment;method#setLocation#1;class#Rectangle#0" expanded="false" />
-            <element signature="docComment;method#move#0;class#Rectangle#0" expanded="false" />
-            <element signature="method#move#0;class#Rectangle#0" expanded="false" />
-            <element signature="docComment;method#translate#0;class#Rectangle#0" expanded="false" />
-            <element signature="method#translate#0;class#Rectangle#0" expanded="false" />
-            <element signature="e#18347#18367#0" expanded="false" />
-            <element signature="e#18483#18523#0" expanded="false" />
-            <element signature="e#18984#19036#0" expanded="false" />
-            <element signature="e#19510#19538#0" expanded="false" />
-            <element signature="e#19685#19729#0" expanded="false" />
-            <element signature="docComment;method#getSize#0;class#Rectangle#0" expanded="false" />
-            <element signature="docComment;method#setSize#0;class#Rectangle#0" expanded="false" />
-            <element signature="docComment;method#setSize#1;class#Rectangle#0" expanded="false" />
-            <element signature="docComment;method#resize#0;class#Rectangle#0" expanded="false" />
-            <element signature="method#resize#0;class#Rectangle#0" expanded="false" />
-            <element signature="docComment;method#contains#0;class#Rectangle#0" expanded="false" />
-            <element signature="docComment;method#contains#1;class#Rectangle#0" expanded="false" />
-            <element signature="docComment;method#contains#2;class#Rectangle#0" expanded="false" />
-            <element signature="docComment;method#contains#3;class#Rectangle#0" expanded="false" />
-            <element signature="method#contains#3;class#Rectangle#0" expanded="false" />
-            <element signature="e#25643#25694#0" expanded="false" />
-            <element signature="e#25929#25991#0" expanded="false" />
-            <element signature="docComment;method#inside#0;class#Rectangle#0" expanded="false" />
-            <element signature="method#inside#0;class#Rectangle#0" expanded="false" />
-            <element signature="docComment;method#intersects#0;class#Rectangle#0" expanded="false" />
-            <element signature="method#intersects#0;class#Rectangle#0" expanded="false" />
-            <element signature="docComment;method#intersection#0;class#Rectangle#0" expanded="false" />
-            <element signature="method#intersection#0;class#Rectangle#0" expanded="false" />
-            <element signature="e#29659#29709#0" expanded="false" />
-            <element signature="docComment;method#union#0;class#Rectangle#0" expanded="false" />
-            <element signature="method#union#0;class#Rectangle#0" expanded="false" />
-            <element signature="e#31233#31277#0" expanded="false" />
-            <element signature="e#32161#32223#0" expanded="false" />
-            <element signature="docComment;method#add#0;class#Rectangle#0" expanded="false" />
-            <element signature="method#add#0;class#Rectangle#0" expanded="false" />
-            <element signature="docComment;method#add#1;class#Rectangle#0" expanded="false" />
-            <element signature="docComment;method#add#2;class#Rectangle#0" expanded="false" />
-            <element signature="method#add#2;class#Rectangle#0" expanded="false" />
-            <element signature="e#37665#37716#0" expanded="false" />
-            <element signature="docComment;method#grow#0;class#Rectangle#0" expanded="false" />
-            <element signature="method#grow#0;class#Rectangle#0" expanded="false" />
-            <element signature="e#39278#39308#0" expanded="false" />
-            <element signature="e#39749#39762#0" expanded="false" />
-            <element signature="e#40068#40123#0" expanded="false" />
-            <element signature="docComment;method#isEmpty#0;class#Rectangle#0" expanded="false" />
-            <element signature="docComment;method#outcode#0;class#Rectangle#0" expanded="false" />
-            <element signature="method#outcode#0;class#Rectangle#0" expanded="false" />
-            <element signature="docComment;method#createIntersection#0;class#Rectangle#0" expanded="false" />
-            <element signature="method#createIntersection#0;class#Rectangle#0" expanded="false" />
-            <element signature="docComment;method#createUnion#0;class#Rectangle#0" expanded="false" />
-            <element signature="method#createUnion#0;class#Rectangle#0" expanded="false" />
-            <element signature="docComment;method#equals#0;class#Rectangle#0" expanded="false" />
-            <element signature="method#equals#0;class#Rectangle#0" expanded="false" />
-            <element signature="docComment;method#toString#0;class#Rectangle#0" expanded="false" />
-            <element signature="method#toString#0;class#Rectangle#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -887,7 +679,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="194">
           <caret line="51" column="37" lean-forward="false" selection-start-line="51" selection-start-column="37" selection-end-line="51" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1029,44 +820,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/gui/WindowEventHandler.java" />
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="7" lean-forward="false" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/gui/ComponentEventHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="3" lean-forward="true" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/awt/geom/RectangularShape.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="127">
           <caret line="100" column="18" lean-forward="false" selection-start-line="100" selection-start-column="18" selection-end-line="100" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/engine/Ball.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="method#setBall#0;class#Ball#0" expanded="false" />
-            <element signature="method#Ball#0;class#Ball#0" expanded="false" />
-            <element signature="method#Ball#1;class#Ball#0" expanded="false" />
-            <element signature="docComment;method#nextMove#0;class#Ball#0" expanded="false" />
-            <element signature="method#nextMove#0;class#Ball#0" expanded="false" />
-            <element signature="docComment;method#paint#0;class#Ball#0" expanded="false" />
-            <element signature="docComment;method#clone#0;class#Ball#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1078,10 +835,313 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/lang/Thread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="140" column="6" lean-forward="false" selection-start-line="140" selection-start-column="6" selection-end-line="140" selection-end-column="6" />
+          <folding>
+            <element signature="docComment;class#Thread#0" expanded="false" />
+            <element signature="initializer##0;class#Thread#0" expanded="false" />
+            <element signature="docComment;field#parkBlocker#0;class#Thread#0" expanded="false" />
+            <element signature="method#blockedOn#0;class#Thread#0" expanded="false" />
+            <element signature="docComment;field#MIN_PRIORITY#0;class#Thread#0" expanded="false" />
+            <element signature="docComment;field#NORM_PRIORITY#0;class#Thread#0" expanded="false" />
+            <element signature="docComment;field#MAX_PRIORITY#0;class#Thread#0" expanded="false" />
+            <element signature="docComment;method#currentThread#0;class#Thread#0" expanded="false" />
+            <element signature="docComment;method#yield#0;class#Thread#0" expanded="false" />
+            <element signature="docComment;method#sleep#0;class#Thread#0" expanded="false" />
+            <element signature="docComment;method#sleep#1;class#Thread#0" expanded="false" />
+            <element signature="method#sleep#1;class#Thread#0" expanded="false" />
+            <element signature="docComment;method#init#0;class#Thread#0" expanded="false" />
+            <element signature="method#init#0;class#Thread#0" expanded="false" />
+            <element signature="docComment;method#init#1;class#Thread#0" expanded="false" />
+            <element signature="method#init#1;class#Thread#0" expanded="false" />
+            <element signature="docComment;method#clone#0;class#Thread#0" expanded="false" />
+            <element signature="method#clone#0;class#Thread#0" expanded="false" />
+            <element signature="docComment;method#Thread#0;class#Thread#0" expanded="false" />
+            <element signature="docComment;method#Thread#1;class#Thread#0" expanded="false" />
+            <element signature="e#15704#15705#0" expanded="false" />
+            <element signature="e#15770#15771#0" expanded="false" />
+            <element signature="docComment;method#Thread#2;class#Thread#0" expanded="false" />
+            <element signature="method#Thread#2;class#Thread#0" expanded="false" />
+            <element signature="docComment;method#Thread#3;class#Thread#0" expanded="false" />
+            <element signature="docComment;method#Thread#4;class#Thread#0" expanded="false" />
+            <element signature="docComment;method#Thread#5;class#Thread#0" expanded="false" />
+            <element signature="docComment;method#Thread#6;class#Thread#0" expanded="false" />
+            <element signature="docComment;method#Thread#7;class#Thread#0" expanded="false" />
+            <element signature="docComment;method#Thread#8;class#Thread#0" expanded="false" />
+            <element signature="method#Thread#8;class#Thread#0" expanded="false" />
+            <element signature="docComment;method#start#0;class#Thread#0" expanded="false" />
+            <element signature="method#start#0;class#Thread#0" expanded="false" />
+            <element signature="docComment;method#run#0;class#Thread#0" expanded="false" />
+            <element signature="method#run#0;class#Thread#0" expanded="false" />
+            <element signature="docComment;method#exit#0;class#Thread#0" expanded="false" />
+            <element signature="method#exit#0;class#Thread#0" expanded="false" />
+            <element signature="docComment;method#stop#0;class#Thread#0" expanded="false" />
+            <element signature="method#stop#0;class#Thread#0" expanded="false" />
+            <element signature="e#32512#32575#0" expanded="false" />
+            <element signature="docComment;method#stop#1;class#Thread#0" expanded="false" />
+            <element signature="docComment;method#interrupted#0;class#Thread#0" expanded="false" />
+            <element signature="docComment;method#isInterrupted#0;class#Thread#0" expanded="false" />
+            <element signature="docComment;method#isInterrupted#1;class#Thread#0" expanded="false" />
+            <element signature="docComment;method#destroy#0;class#Thread#0" expanded="false" />
+            <element signature="docComment;method#isAlive#0;class#Thread#0" expanded="false" />
+            <element signature="docComment;method#suspend#0;class#Thread#0" expanded="false" />
+            <element signature="method#suspend#0;class#Thread#0" expanded="false" />
+            <element signature="docComment;method#resume#0;class#Thread#0" expanded="false" />
+            <element signature="method#resume#0;class#Thread#0" expanded="false" />
+            <element signature="docComment;method#setPriority#0;class#Thread#0" expanded="false" />
+            <element signature="method#setPriority#0;class#Thread#0" expanded="false" />
+            <element signature="docComment;method#getPriority#0;class#Thread#0" expanded="false" />
+            <element signature="docComment;method#setName#0;class#Thread#0" expanded="false" />
+            <element signature="method#setName#0;class#Thread#0" expanded="false" />
+            <element signature="docComment;method#getName#0;class#Thread#0" expanded="false" />
+            <element signature="docComment;method#getThreadGroup#0;class#Thread#0" expanded="false" />
+            <element signature="docComment;method#activeCount#0;class#Thread#0" expanded="false" />
+            <element signature="docComment;method#enumerate#0;class#Thread#0" expanded="false" />
+            <element signature="docComment;method#countStackFrames#0;class#Thread#0" expanded="false" />
+            <element signature="docComment;method#join#0;class#Thread#0" expanded="false" />
+            <element signature="method#join#0;class#Thread#0" expanded="false" />
+            <element signature="docComment;method#join#1;class#Thread#0" expanded="false" />
+            <element signature="method#join#1;class#Thread#0" expanded="false" />
+            <element signature="docComment;method#join#2;class#Thread#0" expanded="false" />
+            <element signature="method#join#2;class#Thread#0" expanded="false" />
+            <element signature="docComment;method#dumpStack#0;class#Thread#0" expanded="false" />
+            <element signature="docComment;method#setDaemon#0;class#Thread#0" expanded="false" />
+            <element signature="method#setDaemon#0;class#Thread#0" expanded="false" />
+            <element signature="docComment;method#isDaemon#0;class#Thread#0" expanded="false" />
+            <element signature="docComment;method#checkAccess#0;class#Thread#0" expanded="false" />
+            <element signature="method#checkAccess#0;class#Thread#0" expanded="false" />
+            <element signature="docComment;method#toString#0;class#Thread#0" expanded="false" />
+            <element signature="method#toString#0;class#Thread#0" expanded="false" />
+            <element signature="docComment;method#getContextClassLoader#0;class#Thread#0" expanded="false" />
+            <element signature="method#getContextClassLoader#0;class#Thread#0" expanded="false" />
+            <element signature="docComment;method#setContextClassLoader#0;class#Thread#0" expanded="false" />
+            <element signature="method#setContextClassLoader#0;class#Thread#0" expanded="false" />
+            <element signature="docComment;method#holdsLock#0;class#Thread#0" expanded="false" />
+            <element signature="docComment;method#getStackTrace#0;class#Thread#0" expanded="false" />
+            <element signature="method#getStackTrace#0;class#Thread#0" expanded="false" />
+            <element signature="e#59334#59396#0" expanded="false" />
+            <element signature="e#59701#59769#0" expanded="false" />
+            <element signature="docComment;method#getAllStackTraces#0;class#Thread#0" expanded="false" />
+            <element signature="method#getAllStackTraces#0;class#Thread#0" expanded="false" />
+            <element signature="docComment;class#Caches#0;class#Thread#0" expanded="false" />
+            <element signature="class#Caches#0;class#Thread#0" expanded="false" />
+            <element signature="docComment;field#subclassAudits#0;class#Caches#0;class#Thread#0" expanded="false" />
+            <element signature="docComment;field#subclassAuditsQueue#0;class#Caches#0;class#Thread#0" expanded="false" />
+            <element signature="docComment;method#isCCLOverridden#0;class#Thread#0" expanded="false" />
+            <element signature="method#isCCLOverridden#0;class#Thread#0" expanded="false" />
+            <element signature="docComment;method#auditSubclass#0;class#Thread#0" expanded="false" />
+            <element signature="method#auditSubclass#0;class#Thread#0" expanded="false" />
+            <element signature="docComment;method#getId#0;class#Thread#0" expanded="false" />
+            <element signature="docComment;class#State#0;class#Thread#0" expanded="false" />
+            <element signature="class#State#0;class#Thread#0" expanded="false" />
+            <element signature="docComment;field#NEW#0;class#State#0;class#Thread#0" expanded="false" />
+            <element signature="docComment;field#RUNNABLE#0;class#State#0;class#Thread#0" expanded="false" />
+            <element signature="docComment;field#BLOCKED#0;class#State#0;class#Thread#0" expanded="false" />
+            <element signature="docComment;field#WAITING#0;class#State#0;class#Thread#0" expanded="false" />
+            <element signature="docComment;field#TIMED_WAITING#0;class#State#0;class#Thread#0" expanded="false" />
+            <element signature="docComment;field#TERMINATED#0;class#State#0;class#Thread#0" expanded="false" />
+            <element signature="docComment;method#getState#0;class#Thread#0" expanded="false" />
+            <element signature="method#getState#0;class#Thread#0" expanded="false" />
+            <element signature="docComment;class#UncaughtExceptionHandler#0;class#Thread#0" expanded="false" />
+            <element signature="class#UncaughtExceptionHandler#0;class#Thread#0" expanded="false" />
+            <element signature="docComment;method#uncaughtException#0;class#UncaughtExceptionHandler#0;class#Thread#0" expanded="false" />
+            <element signature="docComment;method#setDefaultUncaughtExceptionHandler#0;class#Thread#0" expanded="false" />
+            <element signature="method#setDefaultUncaughtExceptionHandler#0;class#Thread#0" expanded="false" />
+            <element signature="docComment;method#getDefaultUncaughtExceptionHandler#0;class#Thread#0" expanded="false" />
+            <element signature="method#getDefaultUncaughtExceptionHandler#0;class#Thread#0" expanded="false" />
+            <element signature="docComment;method#getUncaughtExceptionHandler#0;class#Thread#0" expanded="false" />
+            <element signature="method#getUncaughtExceptionHandler#0;class#Thread#0" expanded="false" />
+            <element signature="docComment;method#setUncaughtExceptionHandler#0;class#Thread#0" expanded="false" />
+            <element signature="method#setUncaughtExceptionHandler#0;class#Thread#0" expanded="false" />
+            <element signature="docComment;method#dispatchUncaughtException#0;class#Thread#0" expanded="false" />
+            <element signature="docComment;method#processQueue#0;class#Thread#0" expanded="false" />
+            <element signature="method#processQueue#0;class#Thread#0" expanded="false" />
+            <element signature="docComment;class#WeakClassKey#0;class#Thread#0" expanded="false" />
+            <element signature="class#WeakClassKey#0;class#Thread#0" expanded="false" />
+            <element signature="docComment;field#hash#0;class#WeakClassKey#0;class#Thread#0" expanded="false" />
+            <element signature="docComment;method#WeakClassKey#0;class#WeakClassKey#0;class#Thread#0" expanded="false" />
+            <element signature="method#WeakClassKey#0;class#WeakClassKey#0;class#Thread#0" expanded="false" />
+            <element signature="docComment;method#hashCode#0;class#WeakClassKey#0;class#Thread#0" expanded="false" />
+            <element signature="docComment;method#equals#0;class#WeakClassKey#0;class#Thread#0" expanded="false" />
+            <element signature="method#equals#0;class#WeakClassKey#0;class#Thread#0" expanded="false" />
+            <element signature="e#78017#78086#0" expanded="false" />
+            <element signature="docComment;field#threadLocalRandomSeed#0;class#Thread#0" expanded="false" />
+            <element signature="docComment;field#threadLocalRandomProbe#0;class#Thread#0" expanded="false" />
+            <element signature="docComment;field#threadLocalRandomSecondarySeed#0;class#Thread#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/javax/swing/JPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-536">
+          <caret line="64" column="13" lean-forward="false" selection-start-line="64" selection-start-column="13" selection-end-line="64" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/lang/Object.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="496" column="44" lean-forward="true" selection-start-line="496" selection-start-column="37" selection-end-line="496" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/awt/Container.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="415" column="34" lean-forward="true" selection-start-line="415" selection-start-column="25" selection-end-line="415" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/javax/swing/JLabel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="710" column="16" lean-forward="false" selection-start-line="710" selection-start-column="16" selection-end-line="710" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/awt/Graphics.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-543">
+          <caret line="782" column="25" lean-forward="false" selection-start-line="782" selection-start-column="25" selection-end-line="782" selection-end-column="25" />
+          <folding>
+            <element signature="docComment;class#Graphics#0" expanded="false" />
+            <element signature="docComment;method#Graphics#0;class#Graphics#0" expanded="false" />
+            <element signature="method#Graphics#0;class#Graphics#0" expanded="false" />
+            <element signature="docComment;method#create#0;class#Graphics#0" expanded="false" />
+            <element signature="docComment;method#create#1;class#Graphics#0" expanded="false" />
+            <element signature="method#create#1;class#Graphics#0" expanded="false" />
+            <element signature="docComment;method#translate#0;class#Graphics#0" expanded="false" />
+            <element signature="docComment;method#getColor#0;class#Graphics#0" expanded="false" />
+            <element signature="docComment;method#setColor#0;class#Graphics#0" expanded="false" />
+            <element signature="docComment;method#setPaintMode#0;class#Graphics#0" expanded="false" />
+            <element signature="docComment;method#getFont#0;class#Graphics#0" expanded="false" />
+            <element signature="docComment;method#setFont#0;class#Graphics#0" expanded="false" />
+            <element signature="docComment;method#getFontMetrics#0;class#Graphics#0" expanded="false" />
+            <element signature="docComment;method#getFontMetrics#1;class#Graphics#0" expanded="false" />
+            <element signature="docComment;method#getClipBounds#0;class#Graphics#0" expanded="false" />
+            <element signature="docComment;method#clipRect#0;class#Graphics#0" expanded="false" />
+            <element signature="docComment;method#setClip#0;class#Graphics#0" expanded="false" />
+            <element signature="docComment;method#getClip#0;class#Graphics#0" expanded="false" />
+            <element signature="docComment;method#setClip#1;class#Graphics#0" expanded="false" />
+            <element signature="docComment;method#copyArea#0;class#Graphics#0" expanded="false" />
+            <element signature="docComment;method#drawLine#0;class#Graphics#0" expanded="false" />
+            <element signature="docComment;method#fillRect#0;class#Graphics#0" expanded="false" />
+            <element signature="docComment;method#drawRect#0;class#Graphics#0" expanded="false" />
+            <element signature="method#drawRect#0;class#Graphics#0" expanded="false" />
+            <element signature="docComment;method#clearRect#0;class#Graphics#0" expanded="false" />
+            <element signature="docComment;method#drawRoundRect#0;class#Graphics#0" expanded="false" />
+            <element signature="docComment;method#fillRoundRect#0;class#Graphics#0" expanded="false" />
+            <element signature="docComment;method#draw3DRect#0;class#Graphics#0" expanded="false" />
+            <element signature="method#draw3DRect#0;class#Graphics#0" expanded="false" />
+            <element signature="docComment;method#fill3DRect#0;class#Graphics#0" expanded="false" />
+            <element signature="method#fill3DRect#0;class#Graphics#0" expanded="false" />
+            <element signature="docComment;method#drawOval#0;class#Graphics#0" expanded="false" />
+            <element signature="docComment;method#fillOval#0;class#Graphics#0" expanded="false" />
+            <element signature="docComment;method#drawArc#0;class#Graphics#0" expanded="false" />
+            <element signature="docComment;method#fillArc#0;class#Graphics#0" expanded="false" />
+            <element signature="docComment;method#drawPolyline#0;class#Graphics#0" expanded="false" />
+            <element signature="docComment;method#drawPolygon#0;class#Graphics#0" expanded="false" />
+            <element signature="docComment;method#drawPolygon#1;class#Graphics#0" expanded="false" />
+            <element signature="docComment;method#fillPolygon#0;class#Graphics#0" expanded="false" />
+            <element signature="docComment;method#fillPolygon#1;class#Graphics#0" expanded="false" />
+            <element signature="docComment;method#drawString#0;class#Graphics#0" expanded="false" />
+            <element signature="docComment;method#drawString#1;class#Graphics#0" expanded="false" />
+            <element signature="docComment;method#drawChars#0;class#Graphics#0" expanded="false" />
+            <element signature="method#drawChars#0;class#Graphics#0" expanded="false" />
+            <element signature="docComment;method#drawBytes#0;class#Graphics#0" expanded="false" />
+            <element signature="method#drawBytes#0;class#Graphics#0" expanded="false" />
+            <element signature="docComment;method#drawImage#0;class#Graphics#0" expanded="false" />
+            <element signature="docComment;method#drawImage#1;class#Graphics#0" expanded="false" />
+            <element signature="docComment;method#drawImage#2;class#Graphics#0" expanded="false" />
+            <element signature="docComment;method#drawImage#3;class#Graphics#0" expanded="false" />
+            <element signature="docComment;method#drawImage#4;class#Graphics#0" expanded="false" />
+            <element signature="docComment;method#drawImage#5;class#Graphics#0" expanded="false" />
+            <element signature="docComment;method#dispose#0;class#Graphics#0" expanded="false" />
+            <element signature="docComment;method#finalize#0;class#Graphics#0" expanded="false" />
+            <element signature="docComment;method#toString#0;class#Graphics#0" expanded="false" />
+            <element signature="docComment;method#getClipRect#0;class#Graphics#0" expanded="false" />
+            <element signature="docComment;method#hitClip#0;class#Graphics#0" expanded="false" />
+            <element signature="method#hitClip#0;class#Graphics#0" expanded="false" />
+            <element signature="e#57893#57944#0" expanded="false" />
+            <element signature="docComment;method#getClipBounds#1;class#Graphics#0" expanded="false" />
+            <element signature="method#getClipBounds#1;class#Graphics#0" expanded="false" />
+            <element signature="e#59205#59256#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/awt/Font.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="566" column="11" lean-forward="false" selection-start-line="566" selection-start-column="11" selection-end-line="566" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/javax/swing/JCheckBoxMenuItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="181" column="5" lean-forward="false" selection-start-line="181" selection-start-column="5" selection-end-line="181" selection-end-column="5" />
+          <folding>
+            <element signature="docComment;class#JCheckBoxMenuItem#0" expanded="false" />
+            <element signature="docComment;field#uiClassID#0;class#JCheckBoxMenuItem#0" expanded="false" />
+            <element signature="docComment;method#JCheckBoxMenuItem#0;class#JCheckBoxMenuItem#0" expanded="false" />
+            <element signature="docComment;method#JCheckBoxMenuItem#1;class#JCheckBoxMenuItem#0" expanded="false" />
+            <element signature="docComment;method#JCheckBoxMenuItem#2;class#JCheckBoxMenuItem#0" expanded="false" />
+            <element signature="docComment;method#JCheckBoxMenuItem#3;class#JCheckBoxMenuItem#0" expanded="false" />
+            <element signature="method#JCheckBoxMenuItem#3;class#JCheckBoxMenuItem#0" expanded="false" />
+            <element signature="docComment;method#JCheckBoxMenuItem#4;class#JCheckBoxMenuItem#0" expanded="false" />
+            <element signature="docComment;method#JCheckBoxMenuItem#5;class#JCheckBoxMenuItem#0" expanded="false" />
+            <element signature="docComment;method#JCheckBoxMenuItem#6;class#JCheckBoxMenuItem#0" expanded="false" />
+            <element signature="method#JCheckBoxMenuItem#6;class#JCheckBoxMenuItem#0" expanded="false" />
+            <element signature="docComment;method#getUIClassID#0;class#JCheckBoxMenuItem#0" expanded="false" />
+            <element signature="docComment;method#getState#0;class#JCheckBoxMenuItem#0" expanded="false" />
+            <element signature="docComment;method#setState#0;class#JCheckBoxMenuItem#0" expanded="false" />
+            <element signature="docComment;method#getSelectedObjects#0;class#JCheckBoxMenuItem#0" expanded="false" />
+            <element signature="method#getSelectedObjects#0;class#JCheckBoxMenuItem#0" expanded="false" />
+            <element signature="docComment;method#writeObject#0;class#JCheckBoxMenuItem#0" expanded="false" />
+            <element signature="method#writeObject#0;class#JCheckBoxMenuItem#0" expanded="false" />
+            <element signature="docComment;method#paramString#0;class#JCheckBoxMenuItem#0" expanded="false" />
+            <element signature="docComment;method#shouldUpdateSelectedStateFromAction#0;class#JCheckBoxMenuItem#0" expanded="false" />
+            <element signature="e#7733#7750#0" expanded="false" />
+            <element signature="docComment;method#getAccessibleContext#0;class#JCheckBoxMenuItem#0" expanded="false" />
+            <element signature="method#getAccessibleContext#0;class#JCheckBoxMenuItem#0" expanded="false" />
+            <element signature="docComment;class#AccessibleJCheckBoxMenuItem#0;class#JCheckBoxMenuItem#0" expanded="false" />
+            <element signature="class#AccessibleJCheckBoxMenuItem#0;class#JCheckBoxMenuItem#0" expanded="false" />
+            <element signature="docComment;method#getAccessibleRole#0;class#AccessibleJCheckBoxMenuItem#0;class#JCheckBoxMenuItem#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="7" lean-forward="false" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/ComponentEventHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="11" lean-forward="false" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/engine/Field.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-133">
-          <caret line="118" column="24" lean-forward="false" selection-start-line="118" selection-start-column="24" selection-end-line="118" selection-end-column="24" />
+        <state relative-caret-position="-1374">
+          <caret line="11" column="20" lean-forward="true" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="20" />
           <folding>
             <element signature="method#Field#0;class#Field#0" expanded="false" />
             <element signature="method#Field#1;class#Field#0" expanded="false" />
@@ -1092,22 +1152,69 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/gui/MouseEventHandler.java">
+    <entry file="file://$PROJECT_DIR$/src/engine/Ball.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="11" column="2" lean-forward="true" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="2" />
-          <folding />
+        <state relative-caret-position="-1833">
+          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding>
+            <element signature="method#setBall#0;class#Ball#0" expanded="false" />
+            <element signature="method#Ball#0;class#Ball#0" expanded="false" />
+            <element signature="method#Ball#1;class#Ball#0" expanded="false" />
+            <element signature="docComment;method#nextMove#0;class#Ball#0" expanded="false" />
+            <element signature="docComment;method#paint#0;class#Ball#0" expanded="false" />
+            <element signature="docComment;method#clone#0;class#Ball#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/MenuEventHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-323">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/engine/concurrent/BallAnimator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-952">
+          <caret line="7" column="3" lean-forward="true" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/gui/FieldPanel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        <state relative-caret-position="-884">
+          <caret line="14" column="22" lean-forward="true" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1867#1868#0" expanded="true" />
-            <element signature="e#1910#1911#0" expanded="true" />
+            <element signature="method#clearBalls#0;class#FieldPanel#0" expanded="false" />
+            <element signature="method#showLabelPause#0;class#FieldPanel#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/MainFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="26" lean-forward="true" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/MouseEventHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="49" column="10" lean-forward="true" selection-start-line="49" selection-start-column="10" selection-end-line="49" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1116,14 +1223,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="26" lean-forward="true" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/gui/MainFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
           <folding />
         </state>
       </provider>
