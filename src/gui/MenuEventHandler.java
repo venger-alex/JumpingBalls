@@ -58,8 +58,14 @@ public class MenuEventHandler implements ActionListener {
                 Boolean state = menuItemPause.getState();
                 BallAnimator.setPause(state);
                 fieldPanel.showLabelPause(state);
-                // Change the accessibility of the menu item "Add"
-                menuItemPause.getParent().getComponents()[0].setEnabled(!state);
+                // Change the accessibility of the main menu item "Add"
+                fieldPanel.mainFrame.getJMenuBar().getMenu(0).getItem(0).setEnabled(!state);
+                // Change the accessibility of the popup menu item "Add"
+                ((JMenuItem)fieldPanel.popupMenu.getSubElements()[0]).setEnabled(!state);
+
+                // Set the same state of the main and popup menu item "Pause"
+                ((JCheckBoxMenuItem)fieldPanel.mainFrame.getJMenuBar().getMenu(0).getItem(1)).setState(state);
+                ((JCheckBoxMenuItem)fieldPanel.popupMenu.getSubElements()[1]).setState(state);
                 
                 break;
 
@@ -68,11 +74,13 @@ public class MenuEventHandler implements ActionListener {
                 BallAnimator.setPause(false);
                 fieldPanel.showLabelPause(false);
 
-                JMenuItem menuItemClear = (JMenuItem) e.getSource();
-                // Change the state of the menu item "Pause"
-                ((JCheckBoxMenuItem) menuItemClear.getParent().getComponents()[1]).setState(false);
-                // Change the accessibility of the menu item "Add"
-                menuItemClear.getParent().getComponents()[0].setEnabled(true);
+                // Change the state of the main and popup menu item "Pause"
+                ((JCheckBoxMenuItem)fieldPanel.mainFrame.getJMenuBar().getMenu(0).getItem(1)).setState(false);
+                ((JCheckBoxMenuItem)fieldPanel.popupMenu.getSubElements()[1]).setState(false);
+
+                // Change the accessibility of the main and popup menu item "Add"
+                fieldPanel.mainFrame.getJMenuBar().getMenu(0).getItem(0).setEnabled(true);
+                ((JMenuItem)fieldPanel.popupMenu.getSubElements()[0]).setEnabled(true);
 
                 break;
 

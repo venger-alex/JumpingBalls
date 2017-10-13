@@ -5,13 +5,15 @@ import engine.concurrent.BallAnimator;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.InputEvent;
+import java.awt.event.KeyEvent;
 import java.util.LinkedList;
 import java.util.List;
 
 /**
  * Panel with balls and field
  *
- * @version 1.3 2017-10-12
+ * @version 1.4 2017-10-13
  * @author Alex Venger
  */
 public class FieldPanel extends JPanel {
@@ -22,6 +24,9 @@ public class FieldPanel extends JPanel {
     private static final Color DEFAULT_FIELD_COLOR = Color.GRAY;
 
     private JLabel lblPause = new JLabel("PAUSE");
+
+    MainFrame mainFrame;
+    JPopupMenu popupMenu;
 
     /**
      * List of the jumping balls
@@ -40,6 +45,10 @@ public class FieldPanel extends JPanel {
         repaint();
     }
 
+    public int quantityBalls() {
+        return balls.size();
+    }
+
     public void showLabelPause(boolean flag) {
         if(flag) {
             add(lblPause);
@@ -50,7 +59,9 @@ public class FieldPanel extends JPanel {
         revalidate();
     }
 
-    public FieldPanel() {
+    public FieldPanel(MainFrame mainFrame) {
+        this.mainFrame = mainFrame;
+
         setBorder(BorderFactory.createLineBorder(getBackground(), DEFAULT_BORDER));
         Insets insets = getInsets();
 
@@ -74,8 +85,42 @@ public class FieldPanel extends JPanel {
         lblPause.setHorizontalAlignment(SwingConstants.CENTER);
         lblPause.setVerticalAlignment(SwingConstants.CENTER);
 
+        setToolTipText("Click to add a ball");
+
         addComponentListener(new ComponentEventHandler());
-        addMouseListener(new MouseEventHandler(this));
+        MouseEventHandler mouseEventHandler = new MouseEventHandler(this);
+        addMouseListener(mouseEventHandler);
+        addMouseMotionListener(mouseEventHandler);
+
+        createPopupMenu();
+    }
+
+    private void createPopupMenu() {
+
+        MenuEventHandler menuEventHandler = new MenuEventHandler(this);
+        popupMenu = new JPopupMenu();
+
+        JMenuItem menuItemAdd = new JMenuItem("Add");
+        menuItemAdd.setMnemonic(KeyEvent.VK_D);
+        menuItemAdd.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_D, InputEvent.ALT_DOWN_MASK | InputEvent.CTRL_DOWN_MASK));
+        menuItemAdd.setToolTipText("Add a random flying ball");
+        menuItemAdd.addActionListener(menuEventHandler);
+        popupMenu.add(menuItemAdd);
+
+        JCheckBoxMenuItem menuItemPause = new JCheckBoxMenuItem("Pause");
+        menuItemPause.setMnemonic(KeyEvent.VK_P);
+        menuItemPause.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_P, InputEvent.ALT_DOWN_MASK | InputEvent.CTRL_DOWN_MASK));
+        menuItemPause.setToolTipText("Pause the flight of balls");
+        menuItemPause.addActionListener(menuEventHandler);
+        popupMenu.add(menuItemPause);
+
+        JMenuItem menuItemClear = new JMenuItem("Clear");
+        menuItemClear.setMnemonic(KeyEvent.VK_R);
+        menuItemClear.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_R, InputEvent.ALT_DOWN_MASK | InputEvent.CTRL_DOWN_MASK));
+        menuItemClear.setToolTipText("Remove all balls and clear the field");
+        menuItemClear.addActionListener(menuEventHandler);
+        popupMenu.add(menuItemClear);
+
     }
 
     public void resizeField() {

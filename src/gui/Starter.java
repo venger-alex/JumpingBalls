@@ -11,6 +11,6 @@ import javax.swing.*;
  */
 public class Starter {
     public static void main(String[] args) {
-        SwingUtilities.invokeLater(() -> new MainFrame("Jumping balls v1.1 - click the mouse to add balls"));
+        SwingUtilities.invokeLater(() -> new MainFrame("Jumping balls v1.1 - click to add balls"));
     }
 }

@@ -11,7 +11,7 @@ import java.util.concurrent.ThreadLocalRandom;
 /**
  * Mouse event handler
  *
- * @version 1.2 2017-10-12
+ * @version 1.3 2017-10-13
  * @author Alex Venger
  */
 public class MouseEventHandler extends MouseAdapter {
@@ -24,6 +24,15 @@ public class MouseEventHandler extends MouseAdapter {
         this.fieldPanel = fieldPanel;
     }
 
+
+    @Override
+    public void mouseReleased(MouseEvent e) {
+        if(e.isPopupTrigger() || e.getButton() == MouseEvent.BUTTON3) {
+            fieldPanel.popupMenu.show(e.getComponent(), e.getX(), e.getY());
+            return;
+        }
+    }
+
     /**
      * When the mouse is clicked, a randomly generated ball is generated (color, direction, size, speed)
      * Then the ball is added to the panel and started new thread (for each ball) that recalculates
@@ -31,7 +40,12 @@ public class MouseEventHandler extends MouseAdapter {
      * @param e Mouse event
      */
     @Override
-    public void mouseClicked(MouseEvent e) {
+    public void mousePressed(MouseEvent e) {
+
+        if(e.isPopupTrigger() || e.getButton() == MouseEvent.BUTTON3) {
+            fieldPanel.popupMenu.show(e.getComponent(), e.getX(), e.getY());
+            return;
+        }
 
         if(BallAnimator.isPaused()) return;
 
@@ -54,5 +68,15 @@ public class MouseEventHandler extends MouseAdapter {
         Thread ballAnimator = new BallAnimator(ball);
         fieldPanel.addBall(ballAnimator);
 
+    }
+
+    @Override
+    public void mouseMoved(MouseEvent e) {
+        if(fieldPanel.quantityBalls() > 0 || BallAnimator.isPaused()) {
+            fieldPanel.setToolTipText(null);
+        } else {
+            fieldPanel.setToolTipText("Click to add a ball");
+
+        }
     }
 }
