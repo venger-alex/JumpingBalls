@@ -12,7 +12,7 @@ import java.util.concurrent.ThreadLocalRandom;
 /**
  * Menu event handler
  *
- * @version 1.0 2017-10-12
+ * @version 1.1 2017-10-13
  * @author Alex Venger
  */
 public class MenuEventHandler implements ActionListener {
@@ -54,21 +54,26 @@ public class MenuEventHandler implements ActionListener {
                 break;
 
             case "Pause" :
-                Boolean state = ((JCheckBoxMenuItem) e.getSource()).getState();
+                JCheckBoxMenuItem menuItemPause = (JCheckBoxMenuItem) e.getSource();
+                Boolean state = menuItemPause.getState();
                 BallAnimator.setPause(state);
                 fieldPanel.showLabelPause(state);
-                // Menu item add ball
-                ((JMenuItem)((JRootPane)fieldPanel.getParent().getParent().getParent()).getJMenuBar().getMenu(0).getItem(0)).setEnabled(!state);
+                // Change the accessibility of the menu item "Add"
+                menuItemPause.getParent().getComponents()[0].setEnabled(!state);
+                
                 break;
 
             case "Clear" :
                 fieldPanel.clearBalls();
                 BallAnimator.setPause(false);
-                // Menu item pause
-                ((JCheckBoxMenuItem)((JRootPane)fieldPanel.getParent().getParent().getParent()).getJMenuBar().getMenu(0).getItem(1)).setState(false);
                 fieldPanel.showLabelPause(false);
-                // Menu item add ball
-                ((JMenuItem)((JRootPane)fieldPanel.getParent().getParent().getParent()).getJMenuBar().getMenu(0).getItem(0)).setEnabled(true);
+
+                JMenuItem menuItemClear = (JMenuItem) e.getSource();
+                // Change the state of the menu item "Pause"
+                ((JCheckBoxMenuItem) menuItemClear.getParent().getComponents()[1]).setState(false);
+                // Change the accessibility of the menu item "Add"
+                menuItemClear.getParent().getComponents()[0].setEnabled(true);
+
                 break;
 
             case "Exit" :
